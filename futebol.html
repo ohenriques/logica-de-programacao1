@@ -1,0 +1,32 @@
+<h1>Convertendo texto em números com parseInt( </h1>
+
+<script>
+
+    function pularLinha() {
+        document.write("<br><br>");
+    }
+
+    function showMe(text) {
+        document.write(text);
+        pularLinha();
+    }
+
+    var vitorias = parseInt(prompt("Quantas vitórias?"));
+    var empates = parseInt(prompt("entre com o numero de empates?"));
+    var pontos = (vitorias * 3) + empates;
+
+    showMe("<h2>Ano passado: 28 Pontos</h2>")
+    if (pontos > 28) {
+        showMe("Pontos Atuais do seu time é: " + pontos)
+        showMe("Seu time está MELHOR do que ano passado!");
+
+    } else if (pontos < 28) {
+        showMe("Pontos Atuais do seu time é: " + pontos)
+        showMe("Seu time está PIOR do que ano passado!");
+
+    } else {
+        showMe("Pontos Atuais do seu time é: " + pontos)
+        showMe("Seu time está IGUAL do que ano passado!");
+    }
+
+</script>

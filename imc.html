@@ -1,0 +1,47 @@
+<h1>Calcular IMC</h1>
+
+<script>
+
+    function pularLinha() {
+        document.write("<br><br>");
+    }
+
+    function showMe(text) {
+        document.write("<h2>"+text+"<h2>");
+        pularLinha();
+    }
+
+
+    function calculaIMC(altura, peso) {
+        return Math.round( peso / (altura * altura));
+    }
+
+    var nome = prompt("Informe seu nome?")
+    var alturaUser = prompt(nome + " Qual sua altura?");
+    var pesoUser = prompt(nome + " Qual seu peso?");
+
+    var imc = calculaIMC(alturaUser, pesoUser);
+
+    document.write(nome + " o seu IMC é: " + imc);
+
+    if (imc < 18.5) {
+        showMe("Abaixo do Peso");
+
+    } else if (imc < 18.5 || imc <= 24.9) {
+        showMe("Peso Normal");
+
+    } else if (imc < 25 || imc <= 29.9) {
+        showMe("Sobrepeso");
+
+    } else if (imc < 18.5 || imc <= 34.9) {
+        showMe("Obesidade Grau I");
+
+    } else if (imc < 35 || imc <= 39.9) {
+        showMe("Obesidade Grau II");
+
+    } else if (imc > 40) {
+        showMe("Obesidade Grau III ou Mórbida");
+    } {
+
+    }
+</script>
