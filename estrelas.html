@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        //pulaLinha();
+    }
+
+    for (y = 1; y <= 10; y++) {
+
+        for (x = 1; x <= y; x++) {
+            mostra("*")
+        }
+        pulaLinha();
+    }
+
+    for (coluna = 1; coluna <= 10; coluna++) {
+
+        for (linha = 10; linha <= coluna; linha++) {
+            mostra("*");
+        }
+        pulaLinha();
+    }
+
+
+
+</script>
