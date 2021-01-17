@@ -1,0 +1,24 @@
+<h1>Quantas Gerações já se passaram desde 1500?</h1>
+
+<h2>Irei motrar quantas Gerações já se passaram desde a chegada dos portugas em solo BR.</h2>
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function showMe(chegadaDosPortugueses, mediaDeIdadeDeUmaGeracao) {
+        var espaco = 2021 - chegadaDosPortugueses;
+        var qtdDeGeracPassadas = espaco / mediaDeIdadeDeUmaGeracao;
+        
+        document.write("Já se passaram: " + Math.round(qtdDeGeracPassadas) + " Gerações");
+        pulaLinha();
+        document.write("Desde a chegada dos PT no BR em " + chegadaDosPortugueses);
+    }
+
+    var chegadaDosPortugueses = 1500;
+    var mediaDeIdadeDeUmaGeracao = 28;
+
+    showMe(chegadaDosPortugueses, mediaDeIdadeDeUmaGeracao);
+</script>

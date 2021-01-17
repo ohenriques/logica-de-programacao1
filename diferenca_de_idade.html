@@ -1,0 +1,31 @@
+<h1>A diferença de idades</h1>
+
+<h2>Nossa diferença de idade é: </h2>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function name(params) {
+
+    }
+
+    function mostrar(ronaldao) {
+        document.write(ronaldao);
+        pulaLinha();
+    }
+
+    function media(idade1, idade2) {
+        document.write("A diferença de idade entre Paulo e Luis é: " + (idade1 - idade2) + " Anos.");
+    }
+
+    var idadeLuis = 27;
+    var idadePaulo = 23;
+    var diferença = idadeLuis - idadePaulo;
+
+    mostrar("Luis Tem " + idadeLuis);
+    mostrar("Paulo tem: " + idadePaulo);
+    media(idadeLuis,idadePaulo);
+
+</script>
