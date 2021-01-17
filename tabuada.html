@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<h1> TABUADA </h1>
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+for ( multiplicador = 1 ; multiplicador <= 10; multiplicador++){
+
+    for (num = 1; num <= 10; num++) {
+        
+        mostra(multiplicador+"x"+num + "=" + (multiplicador*num));
+    }
+    pulaLinha();
+}
+
+
+</script>
